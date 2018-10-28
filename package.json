@@ -1,0 +1,25 @@
+{
+  "name": "telebot",
+  "version": "1.0.0",
+  "description": "My trial telebot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/normankong/MyHaileyBot.git"
+  },
+  "keywords": [
+    "telebot"
+  ],
+  "author": "Norman Kong",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "left-pad": "^1.3.0",
+    "request": "^2.88.0",
+    "telegraf": "^3.24.1"
+  }
+}
