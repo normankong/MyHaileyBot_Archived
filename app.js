@@ -6,6 +6,7 @@ const Markup = require('telegraf/markup');
 const session = require('telegraf/session');
 const request = require('request');
 const leftPad = require("left-pad");
+const express = require('express');
 
 const loadingStickerURL = process.env.LOADING_STICKER_URL;
 const stockAPIUrl = process.env.STOCK_API_URL;
@@ -122,3 +123,21 @@ function proceedStockQuote(ctx, stockQuote) {
     }
   )
 }
+
+const app = express();
+
+app.get('/', function(req, res) {
+  res.send('Hello world');
+});
+
+
+if (module === require.main) {
+	const server = app.listen(process.env.PORT || 8080, () => {
+		const port = server.address().port;
+		console.log("=====================================================");
+		console.log(`App listening on port at ${port}`);
+		console.log("=====================================================");
+	});
+}
+
+module.exports = app;
