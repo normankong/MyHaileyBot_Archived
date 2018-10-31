@@ -1,2 +1,6 @@
 # MyHaileyBot
-Telebot Bot for Stock / Payment Process
+Telebot Bot
+
+ - Stock Quote
+ - Payment Process 
+ - Google Vision AI
