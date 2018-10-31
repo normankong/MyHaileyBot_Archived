@@ -203,7 +203,7 @@ function proceedStockQuote(ctx, stockQuote) {
  * @param {URL for the image} url 
  * @param {Telegram Context} ctx 
  */
-const downloadByURL = function (ctx, url) {
+const proceedDownloadAndPredict = function (ctx, url) {
   var buffer = Buffer.alloc(0);
   console.log(`Download from ${url}`);
   // var file = fs.createWriteStream(dest);
