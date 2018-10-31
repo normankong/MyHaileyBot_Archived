@@ -17,10 +17,14 @@
   "author": "Norman Kong",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/automl": "^0.1.2",
     "dotenv": "^6.1.0",
     "express": "^4.16.4",
     "left-pad": "^1.3.0",
+    "properties-reader": "0.0.16",
+    "querystring": "^0.2.0",
     "request": "^2.88.0",
+    "semver": "^5.6.0",
     "telegraf": "^3.24.1"
   }
 }
